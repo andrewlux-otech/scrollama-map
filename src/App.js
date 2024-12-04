@@ -59,7 +59,7 @@ const App = () => {
             lng: lng + offset < -180 ? -180 : (lng + offset > 180 ? 180 : lng + offset),
             lat: lat + offset2 < -90 ? -90 : (lat + offset2 > 90 ? 90 : lat + offset2),
             color: "red",
-            size: Math.random() * size, // Small size: 5px to 15px
+            size: Math.random() * 10 + 30, // Small size: 5px to 15px
           };
         }));
       });
@@ -82,7 +82,7 @@ const App = () => {
         map.current.flyTo({
           center: [2.3522, 48.8566], // Example: New York City coordinates
           zoom: 3, // Adjust zoom level as needed
-          speed: 1.2, // Animation speed
+          speed: 2, // Animation speed
           curve: 1.5, // Animation curvature
         });
         
