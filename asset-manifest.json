@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/scrollama-map/static/css/main.b43c0929.css",
-    "main.js": "/scrollama-map/static/js/main.866b2a15.js",
+    "main.js": "/scrollama-map/static/js/main.02811c2f.js",
     "index.html": "/scrollama-map/index.html",
     "main.b43c0929.css.map": "/scrollama-map/static/css/main.b43c0929.css.map",
-    "main.866b2a15.js.map": "/scrollama-map/static/js/main.866b2a15.js.map"
+    "main.02811c2f.js.map": "/scrollama-map/static/js/main.02811c2f.js.map"
   },
   "entrypoints": [
     "static/css/main.b43c0929.css",
-    "static/js/main.866b2a15.js"
+    "static/js/main.02811c2f.js"
   ]
 }
