@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/scrollama-map/static/css/main.b43c0929.css",
+    "main.js": "/scrollama-map/static/js/main.12d00a3a.js",
+    "index.html": "/scrollama-map/index.html",
+    "main.b43c0929.css.map": "/scrollama-map/static/css/main.b43c0929.css.map",
+    "main.12d00a3a.js.map": "/scrollama-map/static/js/main.12d00a3a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b43c0929.css",
+    "static/js/main.12d00a3a.js"
+  ]
+}
