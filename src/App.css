@@ -1,38 +1,92 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Stays behind the story */
+}
+
+.map-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ); /* Slight map darkening */
+  pointer-events: none; /* Prevent interaction */
+  z-index: 0;
+}
+
+.scroll-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.scroll-story {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent for map visibility */
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional */
+}
+
+.step {
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center;     /* Centers text vertically */
+  height: 100vh;           /* Full viewport height */
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional for emphasis */
+}
+
+.step p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.marker {
+  border-radius: 50%;
+  background-color: red;
+  width: 20px;
+  height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.marker.large {
+  width: 20px;
+  height: 20px;
+}
+
+.marker.growing {
+  width: 30px; /* Final size */
+  height: 30px;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
