@@ -59,7 +59,7 @@ const App = () => {
             lng: lng + offset < -180 ? -180 : (lng + offset > 180 ? 180 : lng + offset),
             lat: lat + offset2 < -90 ? -90 : (lat + offset2 > 90 ? 90 : lat + offset2),
             color: "red",
-            size: Math.random() * 10 + 30, // Small size: 5px to 15px
+            size: Math.random() * 15 + 5, // Small size: 5px to 15px
           };
         }));
       });
